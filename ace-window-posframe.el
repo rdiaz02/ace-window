@@ -19,9 +19,10 @@
                      :string str
                      :poshandler aw-posframe-position-handler
                      :font (face-font 'aw-leading-char-face)
-                     ;; :foreground-color (face-foreground 'aw-leading-char-face)
-                     ;; :background-color (face-background 'aw-leading-char-face)
-		     :foreground-color "dark orange"
+                     :foreground-color (face-foreground 'aw-leading-char-face)
+                     :background-color (face-background 'aw-leading-char-face)
+		     ;; changing this leads to size problems when toggling themes
+		     ;; :foreground-color "dark orange"
 		     ;; :background-color "light gray"
 		     ))))
 
