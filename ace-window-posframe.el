@@ -33,7 +33,7 @@
 
 (defun ace-window-posframe-disable ()
   (setq aw--lead-overlay-fn #'aw--lead-overlay
-        aw--remove-leading-chars-fn #'aw--remove-leading))
+        aw--remove-leading-chars-fn #'avy--remove-leading-chars))
 
 ;;;###autoload
 (define-minor-mode ace-window-posframe-mode

@@ -581,8 +581,8 @@ Amend MODE-LINE to the mode line for the duration of the selection."
                                               (if (and ace-window-display-mode
                                                        (null aw-display-mode-overlay))
                                                   (lambda (_path _leaf))
-                                                #'aw--lead-overlay-fn)
-                                              #'avy--remove-leading-chars-fn)))
+                                                aw--lead-overlay-fn)
+                                              aw--remove-leading-chars-fn)))
                           (if (eq res 'exit)
                               (setq aw-action nil)
                             (or (cdr res)
